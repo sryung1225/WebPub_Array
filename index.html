@@ -24,7 +24,7 @@
             background-size: 110%;
         }
         #contents {}
-        #footer {width: 100%; height: 100px; background: #444;}
+        #footer {background: #222;}
         .container {position: relative; width: 1300px; margin: 0 auto;}
         
         /* header */
@@ -186,7 +186,30 @@
             color: #60ad9f;
         }
         
-        
+        /* footer */
+        .footer {padding: 30px 0; color: #555;}
+        .footer-top {height: 30px; overflow: hidden; padding-left: 10px;}
+        .footer-top .logo {
+            float: left;
+            background: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png) no-repeat -4px -34px;
+	        width: 145px; height: 20px;
+        }
+        .footer-top .icon {float: right; width: 200px;}
+        .footer-top .icon ul {float: right;}
+        .footer-top .icon li {float: left; margin-left: 20px; margin-right: 5px;}
+        .footer-top .icon li:nth-child(1) {background: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png) no-repeat -138px -218px; width: 18px; height: 18px;}
+        .footer-top .icon li:nth-child(2) {background: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png) no-repeat -164px -218px; width: 18px; height: 18px;}
+        .footer-top .icon li:nth-child(3) {background: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png) no-repeat no-repeat -128px -92px; width: 21px; height: 18px;}
+        .footer-top .icon li:nth-child(4) {background: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png) no-repeat  -200px -170px; width: 20px; height: 18px;}
+        .footer-bottom {padding-top: 10px; height: 30px; font-size: 13px;}
+        .footer-bottom .fb1 {float: left; width: 30%;}
+        .footer-bottom .fb1 li {float: left;}
+        .footer-bottom .fb2 {float: left; width: 40%; font-size: 13px; text-align: center;}
+        .footer-bottom .fb3 {float: right;}
+        .footer-bottom .fb3 li {float: left;}
+        .footer-bottom li {position: relative; padding: 0 7px 0 10px;}
+        .footer-bottom li:before {content: ''; width: 1px; height: 12px; background: #555; position: absolute; left: 0; top: 2px;}
+        .footer-bottom li:first-child:before {width: 0; height: 0;}
         
     </style>
 </head>
@@ -335,7 +358,34 @@
             </div>
         </div>
         <div id="footer">
-            <div class="container">footer</div>
+            <div class="container">
+                <div class="footer">
+                    <div class="footer-top">
+                        <h5 class="logo"><span class="ir_su">logo</span></h5>
+                        <div class="icon">
+                            <ul>
+                                <li><span class="ir_su">instagram</span></li>
+                                <li><span class="ir_su">facebook</span></li>
+                                <li><span class="ir_su">blog</span></li>
+                                <li><span class="ir_su">youtube</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <ul class="fb1">
+                            <li>고객센터 1833-5387</li>
+                            <li>09:00 - 18:00 (주말, 공휴일 휴무)</li>
+                        </ul>
+                        <p class="fb2">Powered by <strong>NAVER · LINE</strong></p>
+                        <ul class="fb3">
+                            <li>공지사항</li>
+                            <li>이용약관</li>
+                            <li>CLOVA 채용안내</li>
+                            <li>CLOVA JP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
