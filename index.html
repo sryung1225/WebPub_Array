@@ -17,10 +17,10 @@
         #header {width: 100%; height: 90px; background: rgba(0,0,0,0.8);}
         #banner {
             width: 100%; height: 600px;
-            background: url(https://static-clova.pstatic.net/static/70fd2ea/img/main/main_lamp.jpg);        
-            background-size: cover;
+            background: url(https://static-clova.pstatic.net/static/70fd2ea/img/main/main_lamp.jpg) no-repeat center -180px;
+            background-size: 110%;
         }
-        #contents {width: 100%; height: 2000px; background: #333;}
+        #contents {width: 100%; height: 2000px;}
         #footer {width: 100%; height: 100px; background: #444;}
         .container {position: relative; width: 1300px; margin: 0 auto;}
         
@@ -59,6 +59,38 @@
             background: #05d685;
             border-color: #05d685;
         }
+        
+        /* cont1 */
+        .cont1 {text-align: center; padding: 200px 0;}
+        .cont1 h3 {font-size: 39px; padding-bottom: 10px; font-weight: bold;}
+        .cont1 p.desc {font-size: 23px; padding: 0 300px; line-height: 1.5;}
+        .cont1 .cont1-box {overflow: hidden; margin-top: 40px;}
+        .cont1 .cont1-box > div {float: left; width: 19%; padding: 3%;}
+        .cont1 .cont1-box > div .img {
+            width: 100px; height: 100px;
+            /* margin: 0 auto; 블록 구조로 바꿔 가운데로 오게 */
+            margin: 50px auto;
+        }
+        .cont1 .cont1-box > div h4 {font-size: 30px;}
+        .cont1 .cont1-box > div p {font-size: 18px; margin-top: 20px;}
+        .cont1 .cont1-box > div .ai1 {
+            background: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png) no-repeat -14px -123px;
+	        width: 70px; height: 83px;
+        }
+        .cont1 .cont1-box > div .ai2 {
+            background: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png) no-repeat -108px -123px;
+	        width: 84px; height: 84px;
+        }
+        .cont1 .cont1-box > div .ai3 {
+            background: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png) no-repeat -245px -4px;
+	        width: 83px; height: 90px;;
+        }
+        .cont1 .cont1-box > div .ai4 {
+            background: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png) no-repeat -253px -104px;
+	        width: 67px; height: 85px;
+        }
+        
+        
     </style>
 </head>
 <body>
@@ -95,7 +127,34 @@
         </div>
         <div id="contents">
             <div id="cont1">
-                <div class="container">cont1</div>
+                <div class="container">
+                    <div class="cont1">
+                        <h3>CLOVA AI</h3>
+                        <p class="desc">네이버 클로바는 독자적으로 개발한 AI 기술을 통해<br>세상에 없던 새로운 기술, 서비스, 제품을 만들어가고 있습니다.</p>
+                        <div class="cont1-box">
+                            <div>
+                                <div class="img ai1"><h3 class="ai1 ir_su">DeviceService</h3></div>
+                                <h4>Device & Service</h4>
+                                <p>스마트 디바이스, 서비스로<br>더욱 편리한 일상을 만나보세요.</p>
+                            </div>
+                            <div>
+                                <div class="img ai2"><h3 class="ai2 ir_su">Solution</h3></div>
+                                <h4>Solution</h4>
+                                <p>비즈니스 맞춤형 AI 솔루션으로<br>혁신을 경험하세요.</p>
+                            </div>
+                            <div>
+                                <div class="img ai3"><h3 class="ai3 ir_su">Product</h3></div>
+                                <h4>Product</h4>
+                                <p>세계 최고 수준의 AI가 적용된<br>놀라운 서비스, 제품을 제공해보세요.</p>
+                            </div>
+                            <div>
+                                <div class="img ai4"><h3 class="ai4 ir_su">Research</h3></div>
+                                <h4>Research</h4>
+                                <p>CLOVA AI의 독자적인 기술과<br>세계적인 연구 성과를 확인하세요.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="cont2">
                 <div class="container">cont2</div>
