@@ -2,7 +2,7 @@
 #header {width: 100%; height: 90px; background: rgba(0,0,0,0.8);}
 #banner {
 width: 100%; height: 600px;
-    background: url(https://static-clova.pstatic.net/static/70fd2ea/img/main/main_lamp.jpg) no-repeat center -180px;
+    background: url(../img/main_lamp.jpg) no-repeat center -180px;
     background-size: 110%;
 }
 #contents {}
@@ -13,7 +13,7 @@ width: 100%; height: 600px;
 .header {text-align: center;}
 .header .logo {
     position: absolute; left: 30px; top: 15px;
-    background: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png);
+    background: url(../img/sp_svg_icon.png);
     width: 155px; height: 30px; margin-top: 10px;
 }
 
@@ -59,19 +59,19 @@ width: 100%; height: 600px;
 .cont1 .cont1-box > div h4 {font-size: 30px;}
 .cont1 .cont1-box > div p {margin-top: 10px;}
 .cont1 .cont1-box > div .ai1 {
-    background: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png) no-repeat -14px -123px;
+    background: url(../img/sp_svg_icon.png) no-repeat -14px -123px;
     width: 70px; height: 83px;
 }
 .cont1 .cont1-box > div .ai2 {
-    background: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png) no-repeat -108px -123px;
+    background: url(../img/sp_svg_icon.png) no-repeat -108px -123px;
     width: 84px; height: 83px;
 }
 .cont1 .cont1-box > div .ai3 {
-    background: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png) no-repeat -245px -4px;
+    background: url(../img/sp_svg_icon.png) no-repeat -245px -4px;
     width: 83px; height: 83px;;
 }
 .cont1 .cont1-box > div .ai4 {
-    background: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png) no-repeat -253px -104px;
+    background: url(../img/sp_svg_icon.png) no-repeat -253px -104px;
     width: 67px; height: 83px;
 }
 
@@ -95,11 +95,11 @@ width: 100%; height: 600px;
     width: 100px; height: 100px;
 }
 .cont2 .cont2-box > div .sp1 {
-    background: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png) no-repeat -157px -6px;
+    background: url(../img/sp_svg_icon.png) no-repeat -157px -6px;
     width: 77px; height: 86px;
 }
 .cont2 .cont2-box > div .sp2 {
-    background: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png) no-repeat -4px -220px;
+    background: url(../img/sp_svg_icon.png) no-repeat -4px -220px;
     width: 77px; height: 86px;
 }
 
@@ -173,16 +173,16 @@ width: 100%; height: 600px;
 .footer-top {height: 30px; overflow: hidden; padding-left: 10px;}
 .footer-top .logo {
     float: left;
-    background: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png) no-repeat -4px -34px;
+    background: url(../img/sp_svg_icon.png) no-repeat -4px -34px;
     width: 145px; height: 20px;
 }
 .footer-top .icon {float: right; width: 200px;}
 .footer-top .icon ul {float: right;}
 .footer-top .icon li {float: left; margin-left: 20px; margin-right: 5px;}
-.footer-top .icon li:nth-child(1) {background: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png) no-repeat -138px -218px; width: 18px; height: 18px;}
-.footer-top .icon li:nth-child(2) {background: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png) no-repeat -164px -218px; width: 18px; height: 18px;}
-.footer-top .icon li:nth-child(3) {background: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png) no-repeat no-repeat -128px -92px; width: 21px; height: 18px;}
-.footer-top .icon li:nth-child(4) {background: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png) no-repeat  -200px -170px; width: 20px; height: 18px;}
+.footer-top .icon li:nth-child(1) {background: url(../img/sp_svg_icon.png) no-repeat -138px -218px; width: 18px; height: 18px;}
+.footer-top .icon li:nth-child(2) {background: url(../img/sp_svg_icon.png) no-repeat -164px -218px; width: 18px; height: 18px;}
+.footer-top .icon li:nth-child(3) {background: url(../img/sp_svg_icon.png) no-repeat no-repeat -128px -92px; width: 21px; height: 18px;}
+.footer-top .icon li:nth-child(4) {background: url(../img/sp_svg_icon.png) no-repeat  -200px -170px; width: 20px; height: 18px;}
 .footer-bottom {padding-top: 10px; height: 30px; font-size: 13px;}
 .footer-bottom .fb1 {float: left; width: 30%;}
 .footer-bottom .fb1 li {float: left;}
