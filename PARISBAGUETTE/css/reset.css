@@ -1,0 +1,14 @@
+﻿/* Reset CSS */
+/* @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css); */
+*{ margin: 0; padding: 0; border: 0; outline: 0; vertical-align: top; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{ display: block; }
+ul, ol, dl{ list-style: none; }
+img, video{ max-width: 100%; border: 0; vertical-align: top; }
+a{ vertical-align: top; text-decoration: none; color: #000000; }
+table{ border-collapse: collapse; border-spacing: 0; }
+input, select{ vertical-align: middle; }
+body{ background: url(../img/body_bg.jpg) repeat scroll 0 0; font-family: 'NanumBarunGothic', sans-serif !important;}
+font-size: 100%; line-height: 1; color:  #333333;}
+label{ cursor: pointer; }
+.blind,legend,hr,caption{ display: block; overflow: hidden; position: absolute; top: 0; left: -1000em; }
+i,em,address{ font-style: normal; font-weight: normal; }
