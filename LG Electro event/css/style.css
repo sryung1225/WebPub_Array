@@ -1,0 +1,63 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600);
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+/*  Reset CSS  */
+* {margin: 0; padding: 0;}
+ol,ul {list-style: none;}
+a {outline: 0; text-decoration: none; color: #555;}
+img {border: 0;}
+
+/* logo */
+h1 {position: fixed; top: 40px; left: 50px; z-index: 10;}
+h1 img{width: 200px; height: auto;}
+h1 > span {display: none;}
+h2 {position: fixed; right: 50px; bottom: 30px; z-index: 11; font-size: 100px; color: #eeeeee; font-family: 'Titillium Web',sans-serif; text-shadow: 1px 1px 2px #000000;}
+
+/* menu */
+#menu {position: fixed; top: 50%; left: 0px; margin-top: -120px; z-index: 13;}
+#menu a {
+    display: block; width: 190px; height: 60px; 
+    font-family: 'Titillium Web',sans-serif; font-size: 20px; color: #000; text-align: right;
+    overflow: hidden; box-sizing: border-box; border-right: 1px solid #111111; 
+    opacity: 0.8; transition: all 0.5s; line-height: 60px; padding-right: 10px;
+}
+#menu li:hover a {opacity: 1;}
+#menu li.on a {opacity: 1;}
+#menu li:nth-child(1):hover a {color: #d4164c; border-color: #d4164c;}
+#menu li:nth-child(2):hover a {color: #816556; border-color: #816556;}
+#menu li:nth-child(3):hover a {color: #ffec6a; border-color: #ffec6a;}
+#menu li:nth-child(4):hover a {color: #005a89; border-color: #005a89;}
+#menu li:nth-child(1).on a {color: #d4164c; border-color: #d4164c;}
+#menu li:nth-child(2).on a {color: #816556; border-color: #816556;}
+#menu li:nth-child(3).on a {color: #ffffff; border-color: #ffffff;}
+#menu li:nth-child(4).on a {color: #005a89; border-color: #005a89;}
+
+/* 레이아웃 */
+section {
+    width: 100%; height: 100vh; position: relative; overflow:hidden;
+    background-size: cover; background-position: right center; background-attachment: fixed;
+}
+section:nth-child(1) {background-image: url(../images/bg11.jpg);}
+section:nth-child(2) {background-image: url(../images/bg22.jpg);}
+section:nth-child(3) {background-image: url(../images/bg33.jpg);}
+section:nth-child(4) {background-image: url(../images/bg44.jpg);}
+section:last-child {padding-bottom: 1px;} /* jQuery에서 스크롤이 인식하는 값 때문에 */
+
+/* 텍스트 박스 */
+article {position: absolute; top: 46%; left: 300px; z-index: 11;}
+article p {font-family: 'Jeju Gothic', sans-serif; font-size: 50px; margin-bottom: 10px; line-height: 1;}
+article span {font-size:16px; font-family:'Jeju Gothic', sans-serif;}
+section:nth-child(1) p {color: #d4164c;}
+section:nth-child(1) span {color: #111111;}
+section:nth-child(2) p {color: #816556;}
+section:nth-child(2) span {color: #111111;}
+section:nth-child(3) p {color: #ffffff;}
+section:nth-child(3) span {color: #111111;}
+section:nth-child(4) p {color: #005a89;}
+section:nth-child(4) span {color: #111111;}
+
+/* 첫번째 박스 떠다니는 이미지 */
+.p11 {position: absolute; bottom: 0px; right: 0px;}
+.p12 {position: absolute; bottom: -40px; right: 130px;}
+.p13 {position: absolute; top: 200px; left: 130px;}
