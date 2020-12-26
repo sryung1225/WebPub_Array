@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tab Menu</title>
+    <style>
+        /* reset */
+        * {margin: 0; padding: 0;}
+        ul, li {list-style: none;}
+        a {text-decoration: none;}
+        
+        /* custom */
+        body {
+            height: 100vh; width: 100%; background: skyblue;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .tab {width: 600px; height: 300px; background: #fff;}
+        .tab_title {margin-bottom: 50px;}
+        .tab_title ul li {float: left; width: 25%; text-align: center;}
+        .tab_title ul li a {color: #000;}
+        .tab_title ul li.active a {color: red;}
+        .tab_cont {}
+        .tab_cont > div {display: none;}
+        .tab_cont > div:first-child {display: block;}
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <div class="tab_title">
+            <ul>
+                <li class="active"><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+                <li><a href="#">메뉴4</a></li>
+            </ul>
+        </div>
+        <div class="tab_cont">
+            <div class="menu1">
+                <p>
+                    11Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, repudiandae! Esse consequuntur aliquid deserunt porro itaque soluta ducimus vitae facere sit amet asperiores quia ratione blanditiis temporibus, aperiam autem! Sapiente.
+                </p>
+            </div>
+            <div class="menu2">
+                <p>
+                    22Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt fugit itaque earum debitis aperiam nobis provident aspernatur ea sint praesentium blanditiis illo et facere adipisci quo, rerum rem commodi voluptate?
+                </p>
+            </div>
+            <div class="menu3">
+                <p>
+                    33Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt fugit itaque earum debitis aperiam nobis provident aspernatur ea sint praesentium blanditiis illo et facere adipisci quo, rerum rem commodi voluptate?
+                </p>
+            </div>
+            <div class="menu4">
+                <p>
+                    44Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt fugit itaque earum debitis aperiam nobis provident aspernatur ea sint praesentium blanditiis illo et facere adipisci quo, rerum rem commodi voluptate?
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        var title = $(".tab_title ul li");
+        var cont = $(".tab_cont > div");
+        
+        cont.hide().eq(0).show();
+        
+        title.click(function(e){
+            e.preventDefault();
+            var target = $(this);
+            var index = target.index();
+            
+            title.removeClass("active");
+            target.addClass("active");
+            cont.css("display", "none");
+            cont.eq(index).css("display", "block");
+        });
+    </script>
+    
+</body>
+</html>
