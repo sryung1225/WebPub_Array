@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>slide - html/css로만 만들기 (화살표 고정)</title>
+    <style>
+        /* reset */
+        * {margin: 0; padding: 0;}
+        
+        /* custom */
+        .section .slidewrap {width: 600px; margin: 0 auto; overflow: hidden; position: relative;}
+        .section .slidelist {white-space: nowrap; font-size: 0;}
+        .section .slidelist li {display: inline-block; vertical-align: middle; width: 100%; transition: all 0.5s;}
+        .section .slidelist li a {display: block; position: relative;}
+        .section .slidelist li a img {width: 100%;}
+        .section .slide-control {position: absolute; top: 0; left: 0; z-index: 10; width: 100%; height: 100%;}
+        .section .slide-control label {position: absolute; z-index: 1; top: 50%; transform: translateY(-50%); padding: 30px; cursor: pointer;}
+        .section .slide-control label.left {left: 30px; background: url(img/left.png) center center / 100% no-repeat;}
+        .section .slide-control label.right {right: 30px; background: url(img/right.png) center center / 100% no-repeat;}
+        .section .slide-control [class*="control"] {display: none;}
+        
+        .section input[id*="slide"] {display: none;}
+        .section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+        .section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+        .section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+        .section [id="slide01"]:checked ~ .slidewrap .control01 {display: block;}
+        .section [id="slide02"]:checked ~ .slidewrap .control02 {display: block;}
+        .section [id="slide03"]:checked ~ .slidewrap .control03 {display: block;}
+    </style>
+</head>
+<body>
+    <div class="section">
+        <input type="radio" name="slide" id="slide01" checked>
+        <input type="radio" name="slide" id="slide02">
+        <input type="radio" name="slide" id="slide03">
+        <div class="slidewrap">
+            <ul class="slidelist">
+                <li>
+                    <a>
+                        <img src="img/slide01.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="img/slide02.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="img/slide03.jpg">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="slide-control">
+                <div class="control01">
+                    <label for="slide03" class="left"></label>
+                    <label for="slide02" class="right"></label>
+                </div>
+                <div class="control02">
+                    <label for="slide01" class="left"></label>
+                    <label for="slide03" class="right"></label>
+                </div>
+                <div class="control03">
+                    <label for="slide02" class="left"></label>
+                    <label for="slide01" class="right"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
